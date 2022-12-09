@@ -8,5 +8,6 @@ services:
     volumes:
       - ./starwars:/app/starwars
       - ./startrek:/app/startrek
+      - ./apache/starwars.conf:/etc/apache2/sites-enabled/palpatine.conf
       - ./apache/startrek.conf:/etc/apache2/sites-enabled/startrek.conf
-      - ./apache/strawars.conf:/etc/apache2/sites-enabled/starwars.conf
+      - ./apache/starwars.conf:/etc/apache2/sites-enabled/starwars.conf
