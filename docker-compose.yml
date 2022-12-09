@@ -1,5 +1,5 @@
 version: "3"
-serivices:
+services:
   web:
     build: apache
     ports:
@@ -9,4 +9,4 @@ serivices:
       - ./starwars:/app/starwars
       - ./startrek:/app/startrek
       - ./apache/startrek.conf:/etc/apache2/sites-enabled/startrek.conf
-      - ./apache/strawars.conf:/etc/apache2/sites-enabled/starwars.con
+      - ./apache/strawars.conf:/etc/apache2/sites-enabled/starwars.conf
